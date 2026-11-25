@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD on ECS</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      text-align: center;
+    }
+    .card {
+      padding: 40px;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      background: #161b22;
+      max-width: 560px;
+    }
+    h1 { font-size: 2rem; margin-bottom: 12px; }
+    p { color: #8b949e; margin-bottom: 20px; }
+    .flow { font-size: 0.95rem; color: #58a6ff; }
+    .badge {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: #238636;
+      color: #fff;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hi! 👋</h1>
+    <p>This page is running via CI/CD on AWS ECS.</p>
+    <div class="flow">
+      GitHub → Actions → Docker → Trivy → ECR → ECS
+    </div>
+    <span class="badge">Deployed automatically</span>
+  </div>
+</body>
+</html>
